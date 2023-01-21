@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.CompareTag("Obstacles"))
+        if (collision.gameObject.CompareTag("Obstacles"))
         {
             _gameManager.GameOver(_gameTimer);
         }
